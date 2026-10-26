@@ -1,1 +1,145 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f5;
+  color: #1c3028;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #102b25;
+}
+
+.logo {
+  color: #7ce3b1;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #dff3e8;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin-bottom: 12px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.button {
+  display: inline-block;
+  background: #176c4b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #104d36;
+}
+
+.offers {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.offers h2,
+.contact h2 {
+  margin-bottom: 25px;
+}
+
+.job {
+  background: white;
+  border: 1px solid #dce6df;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px #102b250a;
+}
+
+.job h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.job p {
+  margin: 10px 0;
+  color: #53645b;
+}
+
+.job .salary {
+  color: #176c4b;
+  font-weight: bold;
+}
+
+.job .button {
+  margin-top: 10px;
+}
+
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  background: #e4eee8;
+}
+
+.contact a {
+  color: #176c4b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #102b25;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 55px 20px;
+  }
+}
+
